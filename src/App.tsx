@@ -9,7 +9,7 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
-import heroImg from "./assets/images/por_do_sol.jpg";
+import heroImg from "./assets/images/public/por_do_sol.jpg";
 import menuImg1 from "./assets/images/public/pizza_3.jpg";
 import menuImg2 from "./assets/images/public/pizza_5.jpg";
 import menuImg3 from "./assets/images/public/pizza_6.jpg";
