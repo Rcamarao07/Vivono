@@ -9,12 +9,10 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
-
-import menuImg1 from "./assets/images/public/pizza_3.jpg";
-import menuImg2 from "./assets/images/public/pizza_5.jpg";
-import menuImg3 from "./assets/images/public/pizza_6.jpg";
-import heroImg from "./assets/images/public/por_do_sol.jpg";
-
+const menuImg1 = "https://i.postimg.cc/pyMnR5Db/pizza-3.jpg"
+const menuImg2 = "https://i.postimg.cc/DyGD2S9R/pizza-6.jpg"
+const menuImg3 ="https://i.postimg.cc/Qx7PXF2w/pizza-5.jpg"
+const heroImg ="https://i.postimg.cc/7Yzcx5Fc/por-do-sol.jpg"
 import {
   ArrowRight,
   ChevronRight,
