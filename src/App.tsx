@@ -9,6 +9,10 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
+import heroImg from "./assets/regenerated_image_1777410336650.jpg";
+import menuImg1 from "./assets/regenerated_image_1777409104906.jpg";
+import menuImg2 from "./assets/regenerated_image_1777409804354.jpg";
+import menuImg3 from "./assets/regenerated_image_1777409521253.jpg";
 import {
   ArrowRight,
   ChevronRight,
@@ -1107,7 +1111,7 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
               className="aspect-[4/5] bg-[#D1CCBF] rounded-[40px] overflow-hidden relative shadow-2xl group lg:w-[65%] lg:ml-auto lg:mr-12"
             >
               <img
-                src="/regenerated_image_1777410336650.jpg"
+                src={heroImg}
                 alt="Vívono Sourdough Pizza"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -1146,21 +1150,21 @@ const Features = () => {
       tagline:
         "Molho San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto e cogumelos.",
       id: "I",
-      image: "/regenerated_image_1777409104906.jpg",
+      image: menuImg1,
     },
     {
       title: "Anchova",
       tagline:
         "Molho de tomate San Marzano, anchovas, alcaparras, Grana Padano e tomate cereja.",
       id: "II",
-      image: "/regenerated_image_1777409804354.jpg",
+      image: menuImg2,
     },
     {
       title: "Brasiliana",
       tagline:
         "Molho San Marzano, Mozzarella Fior di Latte, frango e queijo tipo catupiry, finalizada com orégano e azeite extravirgem.",
       id: "III",
-      image: "/regenerated_image_1777409521253.jpg",
+      image: menuImg3,
     },
   ];
 
