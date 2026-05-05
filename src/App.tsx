@@ -9,10 +9,10 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
-import heroImg from "./assets/regenerated_image_1777410336650.jpg";
-import menuImg1 from "./assets/regenerated_image_1777409104906.jpg";
-import menuImg2 from "./assets/regenerated_image_1777409804354.jpg";
-import menuImg3 from "./assets/regenerated_image_1777409521253.jpg";
+const heroImg = "https://picsum.photos/seed/vivono-hero/800/1000";
+const menuImg1 = "https://picsum.photos/seed/pizza-special-1/800/1000";
+const menuImg2 = "https://picsum.photos/seed/pizza-special-2/800/1000";
+const menuImg3 = "https://picsum.photos/seed/pizza-special-3/800/1000";
 import {
   ArrowRight,
   ChevronRight,
