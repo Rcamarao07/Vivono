@@ -9,10 +9,12 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
-const menuImg1 = "https://i.postimg.cc/pyMnR5Db/pizza-3.jpg"
-const menuImg2 = "https://i.postimg.cc/DyGD2S9R/pizza-6.jpg"
-const menuImg3 ="https://i.postimg.cc/Qx7PXF2w/pizza-5.jpg"
-const heroImg ="https://i.postimg.cc/7Yzcx5Fc/por-do-sol.jpg"
+
+const heroImg = "https://i.postimg.cc/7Yzcx5Fc/por-do-sol.jpg";
+const menuImg1 = "https://i.postimg.cc/pyMnR5Db/pizza-3.jpg";
+const menuImg2 = "https://i.postimg.cc/DyGD2S9R/pizza-6.jpg";
+const menuImg3 = "https://i.postimg.cc/Qx7PXF2w/pizza-5.jpg";
+
 import {
   ArrowRight,
   ChevronRight,
@@ -1104,7 +1106,7 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
             </motion.div>
           </div>
 
-          <div className="relative group hidden lg:block">
+          <div className="relative group hidden lg:block lg:-translate-x-10">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
