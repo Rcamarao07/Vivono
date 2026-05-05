@@ -10,14 +10,11 @@
 
 import { motion, AnimatePresence } from "motion/react";
 
-// --- IMAGE CONFIGURATION FOR GITHUB ---
-// To use your images, simply place them inside the `public/images` folder at the root of your project.
-// The paths below will automatically load them.
-const heroImg = "/images/por_do_sol.jpg";
-const menuImg1 = "/images/pizza_3.jpg";
-const menuImg2 = "/images/pizza_6.jpg";
-const menuImg3 = "/images/pizza_5.jpg";
-// --------------------------------------
+import menuImg1 from "./assets/images/public/pizza_3.jpg";
+import menuImg2 from "./assets/images/public/pizza_5.jpg";
+import menuImg3 from "./assets/images/public/pizza_6.jpg";
+import heroImg from "./assets/images/public/por_do_sol.jpg";
+
 import {
   ArrowRight,
   ChevronRight,
