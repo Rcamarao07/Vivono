@@ -9,10 +9,10 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
-import heroImg from "./assets/images/public/por_do_sol.jpg";
+import heroImg from "./assets/images/regenerated_image_1777410336650.jpg";
 import menuImg1 from "./assets/images/public/pizza_3.jpg";
-import menuImg2 from "./assets/images/public/pizza_5.jpg";
-import menuImg3 from "./assets/images/public/pizza_6.jpg";
+import menuImg2 from "./assets/images/public/pizza_6.jpg";
+import menuImg3 from "./assets/images/public/pizza_5.jpg";
 import {
   ArrowRight,
   ChevronRight,
@@ -1114,7 +1114,6 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
                 src={heroImg}
                 alt="Vívono Sourdough Pizza"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#1A2A1A]/80" />
               <div className="absolute bottom-12 left-12 right-12 p-8 border border-white/20 rounded-2xl backdrop-blur-sm bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -1201,7 +1200,6 @@ const Features = () => {
                       src={item.image}
                       alt={item.title}
                       className="absolute inset-0 w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-black/10" />
                     <div className="absolute top-4 right-4 md:top-10 md:right-10 text-2xl md:text-4xl font-display italic text-white/40">
