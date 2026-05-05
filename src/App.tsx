@@ -9,10 +9,10 @@
  */
 
 import { motion, AnimatePresence } from "motion/react";
-const heroImg = "/regenerated_image_1777410336650.jpg";
-const menuImg1 = "/regenerated_image_1777409104906.jpg";
-const menuImg2 = "/regenerated_image_1777409804354.jpg";
-const menuImg3 = "/regenerated_image_1777409521253.jpg";
+import heroImg from "./assets/images/regenerated_image_1777410336650.jpg";
+import menuImg1 from "./assets/images/public/pizza_3.jpg";
+import menuImg2 from "./assets/images/public/pizza_5.jpg";
+import menuImg3 from "./assets/images/public/pizza_6.jpg";
 import {
   ArrowRight,
   ChevronRight,
