@@ -279,7 +279,7 @@ const SimpleCarousel = ({
     <div className="relative group w-full">
       <div
         ref={containerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory gap-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] w-full items-stretch relative z-10 px-[4.5rem]"
+        className="flex overflow-x-auto snap-x snap-mandatory gap-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] w-full items-stretch relative z-10 px-6 md:px-12 lg:px-[4.5rem]"
       >
         {items.map((item, index) => (
           <div
@@ -972,7 +972,7 @@ const MenuSection = () => {
       id="cardapio"
       className="bg-[#E9E4D9] text-[#1A2A1A] pt-32 pb-20 border-t border-[#D1CCBF]"
     >
-      <div className="w-full px-[4.5rem] relative">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem] relative">
         <div className="flex flex-col items-center mb-16 text-center">
           <FullLogo
             widthClassName="w-48 md:w-64"
@@ -1077,11 +1077,11 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
               className="flex flex-col items-center justify-center lg:items-start lg:justify-start xl:items-center xl:justify-center w-full text-center lg:text-left xl:text-center lg:pl-[8%] xl:pl-0"
             >
               <FullLogo
-                widthClassName="w-80 sm:w-[26rem] md:w-[34rem] lg:w-[44rem] xl:w-[48rem]"
-                className="text-[#1A2A1A] mb-8 lg:mb-12 mt-2 lg:translate-x-2"
+                widthClassName="w-80 sm:w-[26rem] md:w-[34rem] lg:w-[32rem] xl:w-[48rem]"
+                className="text-[#1A2A1A] mb-8 lg:mb-12 mt-2 lg:translate-x-0 xl:translate-x-2"
               />
 
-              <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center lg:items-start lg:justify-start xl:justify-center gap-6 sm:gap-12 lg:gap-6 xl:gap-12 w-full mt-2 lg:translate-x-[6.7rem] xl:translate-x-[4.5rem]">
+              <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center lg:items-start lg:justify-start xl:justify-center gap-6 sm:gap-12 lg:gap-6 xl:gap-12 w-full mt-2 lg:translate-x-0 xl:translate-x-[4.5rem]">
                 <button
                   onClick={onOpenMenu}
                   className="flex items-center gap-5 text-sm md:text-base font-bold uppercase tracking-[0.3em] group border-b-2 border-[#1A2A1A] pb-3 hover:opacity-70 transition-all font-sans"
@@ -1109,11 +1109,11 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
             </motion.div>
           </div>
 
-          <div className="relative group hidden lg:block lg:-translate-x-10">
+          <div className="relative group hidden lg:block lg:translate-x-0 xl:-translate-x-10">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="aspect-[4/5] bg-[#D1CCBF] rounded-[40px] overflow-hidden relative shadow-2xl group lg:w-[65%] lg:ml-auto lg:mr-12"
+              className="aspect-[4/5] bg-[#D1CCBF] rounded-[40px] overflow-hidden relative shadow-2xl group lg:w-[85%] xl:w-[65%] lg:ml-auto lg:mr-0 xl:mr-12"
             >
               <img
                 src={heroImg}
@@ -1151,22 +1151,25 @@ const Features = () => {
   const menuItems = [
     {
       title: "Prosciutto e Funghi",
-      tagline:
-        "Molho San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto e cogumelos.",
+      tagline: lang === "pt"
+        ? "Molho San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto e cogumelos."
+        : "San Marzano sauce, Mozzarella Fior di Latte, Prosciutto Cotto and mushrooms.",
       id: "I",
       image: menuImg1,
     },
     {
       title: "Anchova",
-      tagline:
-        "Molho de tomate San Marzano, anchovas, alcaparras, Grana Padano e tomate cereja.",
+      tagline: lang === "pt"
+        ? "Molho de tomate San Marzano, anchovas, alcaparras, Grana Padano e tomate cereja."
+        : "San Marzano tomato sauce, anchovies, capers, Grana Padano and cherry tomato.",
       id: "II",
       image: menuImg2,
     },
     {
       title: "Brasiliana",
-      tagline:
-        "Molho San Marzano, Mozzarella Fior di Latte, frango e queijo tipo catupiry, finalizada com orégano e azeite extravirgem.",
+      tagline: lang === "pt"
+        ? "Molho San Marzano, Mozzarella Fior di Latte, frango e queijo tipo catupiry, finalizada com orégano e azeite extravirgem."
+        : "San Marzano sauce, Mozzarella Fior di Latte, chicken and catupiry type cheese, finished with oregano and extra virgin olive oil.",
       id: "III",
       image: menuImg3,
     },
@@ -1177,7 +1180,7 @@ const Features = () => {
       id="o-menu"
       className="py-20 md:pt-24 md:pb-40 bg-[#E9E4D9] border-t border-[#D1CCBF]"
     >
-      <div className="w-full px-[4.5rem]">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem]">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16 md:mb-32">
           <div className="max-w-2xl">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-medium tracking-tight mb-8 text-[#1A2A1A]">
@@ -1191,7 +1194,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="-mx-[4.5rem]">
+        <div className="-mx-6 md:-mx-12 lg:-mx-[4.5rem]">
           <SimpleCarousel
             itemWidthClassName="w-[100vw] sm:w-[50%] xl:w-[33.333333%]"
             items={menuItems}
@@ -1233,7 +1236,7 @@ const Craft = () => {
   const lang = useLang();
   return (
     <section id="nossa-arte" className="py-40 bg-[#1A2A1A] text-[#E9E4D9]">
-      <div className="w-full px-[4.5rem]">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem]">
         <div className="mb-24 max-w-4xl">
           <h2 className="text-5xl md:text-6xl lg:text-[80px] font-display font-medium tracking-tight mb-12 leading-[0.9]">
             Arte. Origine. <br />
@@ -1250,7 +1253,7 @@ const Craft = () => {
           </p>
         </div>
 
-        <div className="-mx-[4.5rem]">
+        <div className="-mx-6 md:-mx-12 lg:-mx-[4.5rem]">
           <SimpleCarousel
             itemWidthClassName="w-[100vw] sm:w-[50%] xl:w-[33.333333%]"
             darkTheme={true}
@@ -1320,7 +1323,7 @@ const Promotions = () => {
   const lang = useLang();
   return (
     <section className="pt-24 pb-12 md:py-32 bg-[#E9E4D9] border-t border-[#D1CCBF]">
-      <div className="w-full px-[4.5rem] text-center">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem] text-center">
         <span className="text-[10px] uppercase tracking-[0.5em] font-bold mb-6 block text-[#1A2A1A]/40">
           {lang === "pt" ? "Eventos & Promoções" : "Events & Promotions"}
         </span>
@@ -1330,7 +1333,7 @@ const Promotions = () => {
             : "At Our House, This Week"}
         </h2>
 
-        <div className="-mx-[4.5rem]">
+        <div className="-mx-6 md:-mx-12 lg:-mx-[4.5rem]">
           <SimpleCarousel
             itemWidthClassName="w-[100vw] sm:w-[50%] xl:w-[33.333333%]"
             items={[
@@ -1423,7 +1426,7 @@ const InstagramFeed = () => {
   const lang = useLang();
   return (
     <section className="pt-8 pb-12 md:pt-10 md:pb-24 bg-[#143020] text-[#E9E4D9]">
-      <div className="w-full px-[4.5rem] text-center flex flex-col items-center">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem] text-center flex flex-col items-center">
         <span className="text-[10px] uppercase tracking-[0.5em] font-bold mb-6 block opacity-60">
           Social
         </span>
@@ -1462,11 +1465,11 @@ const LocationMap = () => {
       id="localizacao"
       className="pt-4 pb-0 md:pt-24 md:pb-0 bg-[#E9E4D9] border-b border-[#D1CCBF]"
     >
-      <div className="w-full px-[4.5rem]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h4 className="text-[10px] md:text-sm uppercase tracking-[0.4em] font-bold text-[#1A2A1A] mb-8 font-sans">
-              {lang === "pt" ? "Localização & Contato" : "Location & Contact"}
+              {lang === "pt" ? "Localização & Contacto" : "Location & Contact"}
             </h4>
             <ul className="text-sm md:text-base space-y-4 font-semibold text-[#1A2A1A]/80 font-sans mb-12">
               <li className="flex items-center gap-3">
@@ -1549,7 +1552,7 @@ const LocationMap = () => {
               {lang === "pt" ? "Horários" : "Opening Hours"}
             </h4>
             <ul className="text-sm md:text-base space-y-3 font-semibold text-[#1A2A1A]/80 font-sans mb-0 lg:mb-12">
-              <li>{lang === "pt" ? "Segunda: Cerrado" : "Monday: Closed"}</li>
+              <li>{lang === "pt" ? "Segunda: Encerrado" : "Monday: Closed"}</li>
               <li>
                 {lang === "pt" ? "Ter — Sex" : "Tue — Fri"}: 17:00 — 23:00
               </li>
@@ -1758,7 +1761,7 @@ const ReviewsSection = () => {
       id="reviews"
       className="bg-[#E9E4D9] text-[#1A2A1A] pt-32 pb-20 border-t border-[#D1CCBF]"
     >
-      <div className="w-full px-[4.5rem] relative">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem] relative">
         <div className="flex flex-col items-center mb-16 text-center">
           <FullLogo
             widthClassName="w-48 md:w-64"
@@ -1909,7 +1912,7 @@ const Reviews = ({ onOpenReviews }: { onOpenReviews: () => void }) => {
 
   return (
     <section className="pt-16 pb-12 md:pt-24 md:pb-24 bg-[#E9E4D9] border-t border-[#D1CCBF]">
-      <div className="w-full px-[4.5rem]">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem]">
         <div className="text-center mb-16 md:mb-24">
           <span className="text-[10px] uppercase tracking-[0.5em] font-bold mb-6 block text-[#1A2A1A]/40">
             Google Reviews
@@ -1918,7 +1921,7 @@ const Reviews = ({ onOpenReviews }: { onOpenReviews: () => void }) => {
             {lang === "pt" ? "O Que Dizem de Nós" : "What They Say About Us"}
           </h2>
         </div>
-        <div className="sm:hidden -mx-[4.5rem]">
+        <div className="sm:hidden -mx-6 md:-mx-12 lg:-mx-[4.5rem]">
           <SimpleCarousel
             items={reviews}
             renderItem={(review, index, total) => {
@@ -2011,7 +2014,7 @@ const Footer = () => {
   const lang = useLang();
   return (
     <footer className="py-6 md:pt-8 md:pb-16 bg-[#E9E4D9] text-[#1A2A1A]">
-      <div className="w-full px-[4.5rem] text-center flex flex-col items-center">
+      <div className="w-full px-6 md:px-12 lg:px-[4.5rem] text-center flex flex-col items-center">
         <FullLogo
           widthClassName="w-64 md:w-72 lg:w-80"
           className="text-[#1A2A1A] mb-12"
