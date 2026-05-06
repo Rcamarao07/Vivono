@@ -1075,7 +1075,7 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
             >
               <FullLogo
                 widthClassName="w-72 sm:w-[26rem] md:w-[34rem] lg:w-[44rem] xl:w-[48rem]"
-                className="text-[#1A2A1A] mb-8 lg:mb-12 mt-2 lg:-translate-x-14"
+                className="text-[#1A2A1A] mb-8 lg:mb-12 mt-2 lg:translate-x-2"
               />
 
               <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center lg:items-start lg:justify-start xl:justify-center gap-6 sm:gap-12 lg:gap-6 xl:gap-12 w-full mt-2 lg:translate-x-[6.7rem] xl:translate-x-[4.5rem]">
