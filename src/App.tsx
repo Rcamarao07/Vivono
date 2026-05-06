@@ -888,7 +888,7 @@ const MenuSection = () => {
           price: "15,90",
         },
         {
-          name: "Mortadela Stracciatella",
+          name: "Mortadella Stracciatella",
           info: "Mozzarella Fior di Latte, mortadella, stracciatella, pistachio, and basil.",
           price: "14,90",
           isFavorite: true,
@@ -999,7 +999,7 @@ const MenuSection = () => {
                 {cat.items.map((item) => (
                   <div key={item.name} className="flex flex-col group">
                     <div className="flex justify-between items-baseline mb-3">
-                      <h3 className="text-xl md:text-2xl font-display font-semibold min-w-fit leading-none flex items-center gap-2">
+                      <h3 className="text-xl md:text-2xl font-display font-semibold min-w-fit leading-none flex items-center gap-2 flex-wrap">
                         {item.name}
                         {item.spicy && (
                           <span
@@ -1074,7 +1074,7 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
               className="flex flex-col items-center justify-center lg:items-start lg:justify-start xl:items-center xl:justify-center w-full text-center lg:text-left xl:text-center lg:pl-[8%] xl:pl-0"
             >
               <FullLogo
-                widthClassName="w-72 sm:w-[26rem] md:w-[34rem] lg:w-[44rem] xl:w-[48rem]"
+                widthClassName="w-80 sm:w-[26rem] md:w-[34rem] lg:w-[44rem] xl:w-[48rem]"
                 className="text-[#1A2A1A] mb-8 lg:mb-12 mt-2 lg:translate-x-2"
               />
 
