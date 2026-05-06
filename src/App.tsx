@@ -998,12 +998,14 @@ const MenuSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
                 {cat.items.map((item) => (
                   <div key={item.name} className="flex flex-col group">
-                    <div className="flex justify-between items-baseline mb-3">
-                      <h3 className="text-xl md:text-2xl font-display font-semibold min-w-fit leading-none flex items-center gap-2 flex-wrap">
-                        {item.name}
+                    <div className="flex justify-between items-start mb-3 gap-4">
+                      <div className="flex-1 flex flex-wrap items-center gap-x-3 gap-y-2">
+                        <h3 className="text-xl md:text-2xl font-display font-semibold leading-tight">
+                          {item.name}
+                        </h3>
                         {item.spicy && (
                           <span
-                            className="flex items-center gap-0.5 text-[#1A2A1A] ml-2"
+                            className="flex items-center gap-0.5 text-[#1A2A1A]"
                             title="Picante"
                           >
                             {[...Array(item.spicy)].map((_, i) => (
@@ -1017,17 +1019,18 @@ const MenuSection = () => {
                         )}
                         {item.isFavorite && (
                           <span
-                            className="text-[8px] font-sans font-bold uppercase tracking-widest bg-[#143020] text-[#E9E4D9] px-2 py-1 rounded-full whitespace-nowrap opacity-90 relative -top-1 ml-1"
-                            title="Favorito da Casa"
+                            className="text-[9px] font-sans font-bold uppercase tracking-widest bg-[#143020] text-[#E9E4D9] px-2.5 py-1 rounded-full whitespace-nowrap opacity-90 inline-flex items-center"
+                            title={lang === "pt" ? "Favorito da Casa" : "House Favorite"}
                           >
-                            Favorito
+                            {lang === "pt" ? "Favorito" : "Favorite"}
                           </span>
                         )}
-                      </h3>
-                      <div className="flex-1 mx-4 border-b border-dotted border-[#1A2A1A]/20" />
-                      <span className="text-lg md:text-xl font-display font-medium flex-shrink-0 leading-none">
-                        {item.price}€
-                      </span>
+                      </div>
+                      <div className="flex-shrink-0 pt-0.5">
+                        <span className="text-lg md:text-xl font-display font-medium leading-none whitespace-nowrap">
+                          {item.price}€
+                        </span>
+                      </div>
                     </div>
                     <p className="text-base md:text-lg text-[#1A2A1A]/60 font-serif italic leading-relaxed">
                       {item.info}
