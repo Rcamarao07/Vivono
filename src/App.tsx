@@ -1136,8 +1136,8 @@ const Hero = ({ onOpenMenu }: { onOpenMenu: () => void }) => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-16 hidden md:block">
-        <div className="text-[10px] uppercase tracking-[0.5em] text-[#1A2A1A]/40 font-bold vertical-text rotate-180 flex items-center gap-4 font-sans">
+      <div className="absolute bottom-10 left-16 hidden xl:block z-0">
+        <div className="text-[10px] uppercase tracking-[0.5em] text-[#1A2A1A]/40 font-bold vertical-text rotate-180 flex items-center gap-4 font-sans whitespace-nowrap">
           <span className="w-10 h-[1px] bg-[#1A2A1A]/30" /> SOURDOUGH
           FERMENTAÇÃO NATURAL
         </div>
